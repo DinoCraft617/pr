@@ -23,9 +23,9 @@ const ENCRYPTION_KEY = "default-secret-key-32-bytes-1234567890";
 const JWT_SECRET = "06177160876567451054943720268410";
 const SESSION_SECRET = "secreto-de-sesion-32-caracteres-seguro";
 const DB_CONFIG = {
-  host: "localhost",
+  host: "shinkansen.proxy.rlwy.net:",
   user: "root",
-  password: "",
+  password: "TYVizHPaZxJPbQPVtjdGKZPtRzLuxAOV",
   database: "pr_dsr",
   waitForConnections: true,
   connectionLimit: 10,
