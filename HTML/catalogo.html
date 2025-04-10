@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Libros</title>
+    <link rel="stylesheet" href="/CSS/catalogo.css">
+    <link rel="icon" href="data:,">
+    </head>
+    <body>
+        <div class="catalogo-container">
+            <h1>Catálogo de Libros</h1>
+            
+            <div class="button-container">
+                <button id="toggleCarrusel">Mostrar Carrusel</button>
+            </div>
+
+            <!-- Nuevos botones de géneros -->
+            <div class="genre-buttons">
+                <button class="genre-btn" data-genero="Todos">Todos</button>
+                <button class="genre-btn" data-genero="Novela">Novela</button>
+                <button class="genre-btn" data-genero="Ciencia Ficción">Ciencia Ficción</button>
+                <button class="genre-btn" data-genero="Fantasía">Fantasía</button>
+                <button class="genre-btn" data-genero="Misterio">Misterio</button>
+                <button class="genre-btn" data-genero="Terror">Terror</button>
+                <button class="genre-btn" data-genero="Romance">Romance</button>
+            </div>
+
+            <div class="carrusel-container" id="carruselContainer">
+                <div class="carrusel">
+                    <div class="carrusel-item">
+                        <img src="/CSS/Juegos.jpeg" alt="Juegos del Hambre">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="/CSS/harry.jpg" alt="Harry Potter y la Piedra Filosofal">
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="/CSS/vuelta.jpg" alt="La Vuelta al Mundo en 80 Días">
+                    </div>
+                </div>
+                <button class="carrusel-btn prev-btn">&#10094;</button>
+                <button class="carrusel-btn next-btn">&#10095;</button>
+            </div>
+
+            <!-- Contenedor para mostrar los libros filtrados -->
+            <div id="librosContainer" class="libros-container"></div>
+        </div>
+        <section id="scrollSection">
+            <h2>Descubre un mundo de historias</h2>
+            <p>Sumérgete en nuestro catálogo y encuentra tu próxima gran aventura.</p>
+            <div class="content">
+                <p>¿Te gustan las emociones fuertes? Explora nuestra colección de <strong>suspenso y thriller</strong>.</p>
+                <p>¿Prefieres viajar a mundos mágicos? Déjate llevar por nuestra selección de <strong>fantasía y ciencia ficción</strong>.</p>
+                <p>¿Buscas aprender algo nuevo? Descubre nuestros libros de <strong>no ficción y autoayuda</strong>.</p>
+                <p>Desliza hacia abajo para explorar nuestras recomendaciones y encontrar el libro perfecto para ti.</p>
+            </div>
+        </section>
+    <script src="/JS/catalogo.js"></script>
+    </body>
+</html>

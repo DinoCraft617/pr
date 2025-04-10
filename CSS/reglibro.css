@@ -1,0 +1,210 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f1ea;
+    color: #3e3e3e;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-container h2 {
+    color: #5a4a3a;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para el botón de verificación */
+#verificacionInicial {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#verificarPermisosBtn {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#verificarPermisosBtn:hover {
+    background-color: #3a5a80;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#mensajeVerificacion {
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+/* Estilos del formulario */
+#registroLibroForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#registroLibroForm label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #5a4a3a;
+}
+
+#registroLibroForm input,
+#registroLibroForm select,
+#registroLibroForm textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#registroLibroForm textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#registroLibroForm select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+}
+
+#registroLibroForm small {
+    font-size: 12px;
+    color: #666;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* Estilo del botón de submit */
+#registroLibroForm button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+#registroLibroForm button[type="submit"]:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para mensajes */
+#mensaje {
+    margin-top: 1.5rem;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Estilos para validación */
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: #dc3545;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4a6fa5;
+    box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .form-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1rem;
+    }
+    
+    #registroLibroForm input,
+    #registroLibroForm select,
+    #registroLibroForm textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    #registroLibroForm button[type="submit"] {
+        padding: 10px 15px;
+    }
+}
+/* Estilos para el botón de catálogo */
+.boton-catalogo-container {
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boton-catalogo {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.boton-catalogo:hover {
+    background-color: #3a5a80;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive para el botón */
+@media (max-width: 480px) {
+    .boton-catalogo {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+

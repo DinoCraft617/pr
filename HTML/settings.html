@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Usuario</title>
+    <link rel="stylesheet" href="/CSS/settings.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <body>
+        <div class="settings-container">
+            <h1>Configuración de Usuario</h1>
+    
+            <!-- Formulario único para todas las configuraciones -->
+            <form id="settingsForm">
+                <!-- Cambiar contraseña -->
+                <h2>Cambiar Contraseña</h2>
+                <input type="password" id="oldPassword" placeholder="Contraseña actual">
+                <input type="password" id="newPassword" placeholder="Nueva contraseña">
+    
+                <!-- Activar/desactivar MFA -->
+                <h2>Autenticación de Dos Factores (MFA)</h2>
+                <label>
+                    <input type="checkbox" id="mfaEnabled"> Activar MFA
+                </label>
+    
+                <!-- Modificar información personal -->
+                <h2>Modificar Información Personal</h2>
+                <input type="text" id="nombre" placeholder="Nombre">
+    
+                <!-- Botón para enviar cambios -->
+                <button type="button" id="saveSettingsButton">Guardar Cambios</button>
+            </form>
+        </div>
+    
+        <!-- Modal para verificación (oculto inicialmente) -->
+        <div id="verificationModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Verificación de Código</h2>
+                <p>Se ha enviado un código de verificación a tu correo. Ingresa el código:</p>
+                <input type="text" id="verificationCode" placeholder="Código de verificación">
+                <button type="button" id="submitVerificationCode">Verificar</button>
+            </div>
+        </div>
+
+    <!-- Llamar al archivo JS externo -->
+    <script src="/JS/settings.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | Biblioteca Digital</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div class="login-container">
+        <div class="corner-decoration corner-top-left"></div>
+        <div class="corner-decoration corner-top-right"></div>
+        <div class="corner-decoration corner-bottom-left"></div>
+        <div class="corner-decoration corner-bottom-right"></div>
+        
+        <a href="index.html" class="back-link">¿No tienes cuenta? Regístrate</a>
+        
+        <h2>Iniciar Sesión</h2>
+        <p class="welcome-message">Bienvenido de vuelta a tu biblioteca</p>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Contraseña" required>
+            </div>
+
+            <div id="mensajeError" class="error-message"></div>
+
+            <button type="submit" id="loginButton">Ingresar</button>
+        </form>
+    </div>
+
+    <script src="/JS/login.js"></script>
+</body>
+</html>

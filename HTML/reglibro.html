@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Libros</title>
+    <link rel="stylesheet" href="/CSS/reglibro.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registro de Libros</h2>
+        
+        <!-- Mensaje de estado -->
+        <div id="mensajeEstado"></div>
+        
+        <!-- Formulario (oculto inicialmente) -->
+        <form id="registroLibroForm" style="display: none;">
+            
+            <label for="nombre">Nombre del Libro:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="Novela">Novela</option>
+                <option value="Ciencia Ficción">Ciencia Ficción</option>
+                <option value="Fantasía">Fantasía</option>
+                <option value="Misterio">Misterio</option>
+                <option value="Terror">Terror</option>
+                <option value="Romance">Romance</option>
+            </select>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="Disponible">Disponible</option>
+                <option value="No_Disponible">No Disponible</option>
+            </select>
+
+            <label for="imagen">URL de la Imagen del Libro:</label>
+            <input type="url" id="imagen" name="imagen" required>
+            <small>Ejemplo: https://ejemplo.com/imagen.jpg</small>
+
+            <button type="submit">Registrar Libro</button>
+            <br><br>
+            <a href="catalogo.html" class="boton-catalogo">Ver Catálogo de Libros</a>
+        </form>
+        
+    </div>
+
+    <script src="/JS/reglibro.js"></script>
+</body>
+</html>
